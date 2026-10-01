@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --color-ink: #1a1d29;
+  --color-paper: #faf8f4;
+  --color-paper-raised: #ffffff;
+
+  --color-navy-50: #eef1f7;
+  --color-navy-100: #d7ddec;
+  --color-navy-400: #4a5a86;
+  --color-navy-600: #2b3a63;
+  --color-navy-700: #212d4d;
+  --color-navy-900: #161e35;
+
+  --color-amber-100: #fbe9cf;
+  --color-amber-400: #d98f2b;
+  --color-amber-500: #c17a1d;
+  --color-amber-600: #a1650f;
+
+  --color-moss-100: #e3ece2;
+  --color-moss-500: #4f7a52;
+  --color-moss-600: #3b5f3d;
+
+  --color-rust-100: #f4e0dc;
+  --color-rust-500: #b1503b;
+  --color-rust-600: #93402e;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-amber-100);
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
